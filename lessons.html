@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Joe Smo Guitars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+    /* Designs page */
+
+
+    h2.lessons{
+      text-align: center;
+    }
+
+    /* Center website */
+
+
+    h1.lessons {
+      font-size: 50px;
+      word-break: break-all;
+    }
+
+    .lessons {
+      margin: 8px -16px;
+    }
+
+    /* Add padding BETWEEN each column (if you want) */
+    .lessons,
+    .lessons > .col_lessons {
+      padding: 8px;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .col_lessons {
+      float: left;
+      width: 33.33%;
+      display: none; /* Hide columns by default */
+    }
+
+    /* Clear floats after rows */
+    .lessons:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+
+    /* Style the buttons */
+    .btn {
+      font-family: 'Raleway', sans-serif;
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: white;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .btn:hover {
+      background-color: #ED1C24;
+    }
+
+    /* Add a dark background color to the active button */
+    .btn.active {
+      background-color: #eee;
+      border-bottom:2px solid #ED1C24;
+      color: black;
+    }
+
+
+
+    </style>
+
+  </head>
+  <body>
+    <div class="topbar">
+
+      <div class="toplogo">
+        <img src="img/Guitar-logo.png" alt="" width="225px">
+      </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="lessons.html">Designs</a></li>
+       <li><a href="about.html">About Us</a></li>
+       <li><a href="contact.html">Contact Us</a></li>
+     </nav>
+
+
+<br>
+    <!--Gallery with filter-->
+
+    <h2 class="lessons">Check Out our Custom Guitar Gallery</h2>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('acoustic')"> Acoustic</button>
+      <button class="btn" onclick="filterSelection('electric')"> Electric</button>
+      <button class="btn" onclick="filterSelection('bass')"> Bass</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="lessons">
+      <div class="col_lessons acoustic">
+        <div class="content">
+          <img src="https://static1.squarespace.com/static/59066e4bf7e0ab758916b8c7/t/5abc4a78f950b7364cf9af04/1522289274963/Colomacustomelectric.jpg" alt="Mountains" style="width:100%">
+          <h4>Hippy Stripes</h4>
+          <p>$500</p>
+        </div>
+      </div>
+      <div class="col_lessons acoustic">
+        <div class="content">
+          <img src="https://images.reverb.com/image/upload/s--zuU-I9e_--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_620,q_90,w_620/v1463535761/ztr6oyngt7idekqtu5db.jpg" alt="Lights" style="width:100%">
+          <h4>Black Wood</h4>
+          <p>$459.99</p>
+        </div>
+      </div>
+      <div class="col_lessons acoustic">
+        <div class="content">
+          <img src="https://russellguitars.com/picts/05-P-top-600.jpg" alt="acoustic" style="width:100%">
+          <h4>Mahogany Wood</h4>
+          <p>$599</p>
+        </div>
+      </div>
+      <div class="col_lessons acoustic">
+        <div class="content">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjoPBuL0AffgcxK4gLaP31DRegQMW0MDl--AFCQJEN8I4JQ5lisA" alt="acoustic" style="width:100%">
+          <h4>Army Fatigue</h4>
+          <p>$499</p>
+        </div>
+      </div>
+
+      <div class="col_lessons electric">
+        <div class="content">
+          <img src="https://image.dhgate.com/0x0/f2/albu/g10/M00/15/B0/rBVaWVv_iueAZqgbAACHohxCvrw168.jpg" alt="electric" style="width:100%">
+          <h4>Yellow Diamonds</h4>
+          <p>$600</p>
+        </div>
+      </div>
+      <div class="col_lessons electric">
+        <div class="content">
+          <img src="https://i.imgur.com/5KUHEJu.png" alt="electric" style="width:100%">
+          <h4>Lego Land</h4>
+          <p>$999</p>
+        </div>
+      </div>
+      <div class="col_lessons electric">
+        <div class="content">
+          <img src="https://gearcollector.com/wp-content/uploads/2016/01/scero-featured.jpg" alt="electric" style="width:100%">
+          <h4>Blue Sky</h4>
+          <p>$499</p>
+        </div>
+      </div>
+      <div class="col_lessons electric">
+        <div class="content">
+          <img src="https://image.dhgate.com/0x0/f2/albu/g5/M01/DD/97/rBVaJFkb7KiAGSH2AAQE2BSE9_c816.jpg" alt="electric" style="width:100%">
+          <h4>Classic</h4>
+          <p>$599</p>
+        </div>
+      </div>
+
+      <div class="col_lessons bass">
+        <div class="content">
+          <img src="https://i1.wp.com/www.notreble.com/wp-content/uploads/2017/09/Anka-Custom-Guitars-Hathor-Deluxe-5-String-Body-Bass-Body-Angle-3-600x400.jpg" alt="bass" style="width:100%">
+          <h4>Burnt Wood</h4>
+          <p>$550</p>
+        </div>
+      </div>
+      <div class="col_lessons bass">
+        <div class="content">
+          <img src="https://www.dhresource.com/600x600/f2/albu/g5/M01/CC/33/rBVaJFjDLoWAU0COAARB2ppznfA529.jpg" alt="bass" style="width:100%">
+          <h4>Caramel</h4>
+          <p>$450</p>
+        </div>
+      </div>
+      <div class="col_lessons bass">
+        <div class="content">
+          <img src="https://ashaudio.com/wp-content/uploads/2018/07/159980-ashaudio.png" alt="bass" style="width:100%">
+          <h4>Ocean</h4>
+          <p>$699</p>
+        </div>
+      </div>
+      <div class="col_lessons bass">
+        <div class="content">
+          <img src="https://i0.wp.com/www.notreble.com/wp-content/uploads/2017/10/Crom-Custom-Shop-Romantic-Warrior-Bass-Body-Angle-600x400.jpg" alt="bass" style="width:100%">
+          <h4>Totem</h4>
+          <p>$599</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+  </div> -->
+
+
+
+
+
+    <!-- Fototer -->
+     <div class="footer">
+
+       <p class="social">
+         <i class="fa fa-facebook-square" style="font-size:28px"></i>
+         <i style="font-size:28px" class="fa">&#xf16d;</i>
+         <i class="fa fa-snapchat-square" style="font-size:28px"></i>
+       </p>
+         <p class="copy">
+         &copy AW Creative 2019
+       </p>
+
+     </div>
+
+     <script type="text/javascript">
+     filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+var x, i;
+x = document.getElementsByClassName("col_lessons");
+if (c == "all") c = "";
+// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+for (i = 0; i < x.length; i++) {
+  w3RemoveClass(x[i], "show");
+  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+}
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+  if (arr1.indexOf(arr2[i]) == -1) {
+    element.className += " " + arr2[i];
+  }
+}
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+  while (arr1.indexOf(arr2[i]) > -1) {
+    arr1.splice(arr1.indexOf(arr2[i]), 1);
+  }
+}
+element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+btns[i].addEventListener("click", function(){
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+});
+}
+     </script>
+
+
+  </body>
+</html>
